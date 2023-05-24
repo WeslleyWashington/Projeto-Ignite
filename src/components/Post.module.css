@@ -1,5 +1,11 @@
 .post {
+    background: var(--gray-800);
+    border-radius: 8px;
+    padding: 2.5rem;
+}
 
+.post + .post {
+    margin-top: 2rem;
 }
 
 .author {
@@ -14,5 +20,5 @@
 }
 
 .authorInfo {
-    
+
 }
