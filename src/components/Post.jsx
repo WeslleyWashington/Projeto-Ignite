@@ -3,6 +3,7 @@ import styles from './Post.module.css'
 export function Post () {
     return (
         <article className={styles.post}>
+
             <header className={styles.space}>
                 <div className={styles.author}>
 
@@ -17,6 +18,8 @@ export function Post () {
 
                 <time title='24 de maio as 17:20h' dateTime='2023-05-24 17:20:23'>Publicado a 1h</time>
             </header>
+
+
             <div className={styles.content}>
                 <p>Fala Meu Povo!</p>
 
@@ -30,10 +33,19 @@ export function Post () {
                     <a href="">#Ignite</a> 
                     <a href="">#rocketseat</a> 
                 </p>
-
-
-
             </div>
+
+            <form className={styles.commentForm}>
+                <strong>Deixe seu Feedback</strong>
+
+                <textarea 
+                    placeholder='Deixe um Comentario!'
+                />
+
+                <button type='submit'>Comentar</button>
+            </form>
+
+
         </article>
     )
 
