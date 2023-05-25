@@ -1,3 +1,4 @@
+import { Comment } from './Comment'
 import styles from './Post.module.css'
 
 export function Post () {
@@ -22,16 +23,14 @@ export function Post () {
 
             <div className={styles.content}>
                 <p>Fala Meu Povo!</p>
-
                 <p>Acabei de subir mais um projeto no meu portifólio. 
                     É um projeto que fiz no Ignite da Rocketseat. 
                     O nome do projeto é Ignite Feed 🚀                    
                 </p>
-
                 <p> 
-                    <a href="">#novoprojeto</a> 
-                    <a href="">#Ignite</a> 
-                    <a href="">#rocketseat</a> 
+                    <a href="#">#novoprojeto</a> 
+                    <a href="#">#Ignite</a> 
+                    <a href="#">#rocketseat</a> 
                 </p>
             </div>
 
@@ -42,8 +41,16 @@ export function Post () {
                     placeholder='Deixe um Comentario!'
                 />
 
-                <button type='submit'>Comentar</button>
+                <footer>
+                     <button type='submit'>Publicar</button>
+                </footer>
             </form>
+
+            <div className={styles.commentList}>
+                <Comment />
+                <Comment />
+                <Comment />
+            </div>
 
 
         </article>
