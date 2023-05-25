@@ -3,7 +3,7 @@ import styles from './Post.module.css'
 export function Post () {
     return (
         <article className={styles.post}>
-            <header>
+            <header className={styles.space}>
                 <div className={styles.author}>
 
                     <img className={styles.avatar} src="https://github.com/WeslleyWashington.png" />
@@ -13,9 +13,9 @@ export function Post () {
                         <strong>Weslley Washington</strong>
                         <span>Web Developer</span>
                     </div>
-
-                    <time title='24 de maio as 17:20h' dateTime='2023-05-24 17:20:23'>Publicado a 1h</time>
                 </div>
+
+                <time title='24 de maio as 17:20h' dateTime='2023-05-24 17:20:23'>Publicado a 1h</time>
             </header>
             <div className={styles.content}>
                 <p>Fala Meu Povo!</p>
@@ -24,11 +24,11 @@ export function Post () {
                     É um projeto que fiz no Ignite da Rocketseat. 
                     O nome do projeto é Ignite Feed 🚀                    
                 </p>
-                
+
                 <p> 
                     <a href="">#novoprojeto</a> 
-                    <a href="">#nlw</a> 
-                    <a href=""> #rocketseat</a> 
+                    <a href="">#Ignite</a> 
+                    <a href="">#rocketseat</a> 
                 </p>
 
 
