@@ -30,7 +30,7 @@ export function Comment () {
                     </button>
                 </footer>
 
-            </div>
+            </div>  
 
         </div>
     )
