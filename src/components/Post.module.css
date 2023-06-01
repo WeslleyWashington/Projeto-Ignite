@@ -47,6 +47,7 @@
 
 .content a {
     font-weight: bold;
+    padding: 0.2rem;
     color: var(--green-500);
     text-decoration: none;
 }
